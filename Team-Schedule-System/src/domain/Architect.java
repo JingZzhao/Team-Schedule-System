@@ -28,6 +28,10 @@ public class Architect extends Designer{
         this.stock = stock;
     }
 
+    public String getDetailsForTeam() {
+        return getMemberDetails() + "\tArchitect\t" + getBonus() + "\t" + getStock();
+    }
+
     @Override
     public String toString() {
         return getDetails() + "\tArchitect\t" + getStatus() + "\t" + getBonus()

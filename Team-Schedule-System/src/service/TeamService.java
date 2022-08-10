@@ -25,6 +25,7 @@ public class TeamService {
      * @return Returns all employees of the current team
      */
     public Programmer[] getTeam(){
+        Programmer[] team = new Programmer[total];
 
         for(int i = 0; i < total; i ++){
             team[i] = this.team[i];

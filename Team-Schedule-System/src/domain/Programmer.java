@@ -49,6 +49,14 @@ public class Programmer extends Employee {
         this.equipment = equipment;
     }
 
+    protected String getMemberDetails(){
+        return getMemberId() + "/" + getDetails();
+    }
+
+    public String getDetailsForTeam(){
+        return getMemberDetails() + "\tProgrammer";
+    }
+
     @Override
     public String toString() {
         return getDetails() + "\tProgrammer\t" + status + "\t\t\t" + equipment.getDescription();

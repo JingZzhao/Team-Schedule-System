@@ -72,11 +72,11 @@ public class TeamView {
         if (prgs.length == 0) {
             System.out.println("No members in the development team!");
         } else {
-            System.out.println("ID\tName\tAge\tSalary\tPosition\tStatus\tBonus\tStock\tEquipment");
+            System.out.println("TID/ID\tName\tAge\tSalary\tPosition\tBonus\tStock");
         }
 
         for (Programmer p : prgs) {
-            System.out.println(p);
+            System.out.println(" " + p.getDetailsForTeam());
         }
         System.out.println("-------------------------------------------------------------------------------");
     }
